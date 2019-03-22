@@ -1,25 +1,25 @@
 [![Build Status](https://travis-ci.org/mharrys/sudoku.svg?branch=master)](https://travis-ci.org/mharrys/sudoku)
 
 # Sudoku solver using Dancing Links (DLX)
-Sudoku can be reduced to a exact cover problem which is known to be
+Sudoku can be reduced to a exact cover problem which is known as
 NP-complete. The classification of NP-complete is only for a generalized nxn
 Sudoku and not a 9x9 Sudoku because it is a finite instance.
 
-The exact cover problem is a decision problem where the objective is to find a
+The exact cover problem is a decision problem where the object is to find a
 exact cover. Given a set S and another set where each element is a subset to
-S, is is possible to select a set of subsets such that every element in S
+S, is it possible to select a set of subsets such that every element in S
 exist in exactly one of the selected sets? This selection of sets is said to
 be a cover of the set S.
 
 Algorithm X (ALX) created by Donald Knuth can be used to find all solutions to
-a exact cover problem. Dancing Links (DLX) is the technique suggested by
+an exact cover problem. Dancing Links (DLX) is the technique suggested by
 Knuth for implementing Algorithm X efficiently.
 
 This solver implements the DLX algorithm as described by Knuth but the
 reduction of a Sudoku to a exact cover problem is not truly a full reduction
-because its reduced directly to the links used in DLX. The full reduction would
+because it reduced directly to the links used in DLX. The full reduction would
 have been to first reduce the Sudoku to a binary matrix and then create the
-links used in DLX. The only reason for this is gain in performance but it is
+links used in DLX. The only reason for this is to improve performance but it is
 less flexible since this reduction can only be used with DLX.
 
 ## License
@@ -48,7 +48,7 @@ notably `all_17` which contains 49151 Sudoku challenges with 17 clues and
 allegedly this is all possible challenges with 17 clues. Note that 17 clues
 does not mean longest solving time. A second huge file  `random` contains
 21460 different Sudoku challenges of varying (human) difficulty rating.
-Specify `-v` to validate the solution and to search for more than one solution.
+Specify `-v` to validate the solution and to search for more solutios.
 
 ## Run
 Show the argument options
